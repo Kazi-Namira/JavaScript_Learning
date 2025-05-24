@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Solution of V62 -->
+    <script>
+      // Adjective variables
+      let adj1 = "Crazy";
+      let adj2 = "Amazing";
+      let adj3 = "Fire";
+
+      // Shop name variables
+      let shop1 = "Engine";
+      let shop2 = "Foods";
+      let shop3 = "Garments";
+
+      // Another word variables
+      let word1 = "Bros";
+      let word2 = "Limited";
+      let word3 = "Hub";
+
+      for (let i = 1; i <= 3; i++) {
+        for (let j = 1; j <= 3; j++) {
+          for (let k = 1; k <= 3; k++) {
+            let adjective = eval("adj" + i);
+            let shop = eval("shop" + j);
+            let word = eval("word" + k);
+            console.log(adjective + " " + shop + " " + word);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
