@@ -1,6 +1,6 @@
-function sum(a, b) {
-  return a + b;
-}
+const func1 = (x) => {
+  console.log("I have " + x + " taka");
+};
 
-c=sum(10,12);
-console.log(c);
+func1(1000);
+func1(20000);

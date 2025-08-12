@@ -16,6 +16,6 @@ console.log(m);
 m.salary = "50000cr";
 console.log(m);
 
-
+// delete a existing property
 delete m.salary;
 console.log(m);
