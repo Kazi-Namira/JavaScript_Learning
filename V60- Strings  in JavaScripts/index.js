@@ -8,20 +8,23 @@ console.log(a[5]);
 console.log(a[6]); /*Extra*/
 
 // Concatenation
+let a = "Namira";
 let b = "Meyheg";
 
 console.log("Her full name is " + a + " " + b);
+// or
+console.log(`Her full name is ${a} ${b}`);
 
 console.log(a + b);
 
-console.log(`Her full name is ${a} ${b}`);
-
 // Escape sequence
-let name = "Namira\nSanam";
-let name = "Namira\tSanam";
-let name = "Namira\rSanam";
+let name1 = "Namira\nSanam";
+let name2 = "Namira\tSanam";
+let name3 = "Namira\rSanam";
 
-console.log(name);
+console.log("name1 : ",name1);
+console.log("name2 : ",name2);
+console.log("name3 : ",name3);
 
 // String properties methods:
 
