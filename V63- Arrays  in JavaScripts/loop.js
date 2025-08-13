@@ -6,7 +6,7 @@ for (let i = 0; i < a.length; i++) {
   console.log(element);
 }
 
-// foreach loop
+// forEach loop
 a.forEach((value, index, arr) => {
   console.log(value, index, arr);
 });

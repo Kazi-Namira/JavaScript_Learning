@@ -22,9 +22,9 @@ let name1 = "Namira\nSanam";
 let name2 = "Namira\tSanam";
 let name3 = "Namira\rSanam";
 
-console.log("name1 : ",name1);
-console.log("name2 : ",name2);
-console.log("name3 : ",name3);
+console.log("name1 : ", name1);
+console.log("name2 : ", name2);
+console.log("name3 : ", name3);
 
 // String properties methods:
 
@@ -36,14 +36,14 @@ console.log(d.toLowerCase());
 console.log(d.slice(2, 5));
 console.log(d.slice(2));
 console.log(d.trim());
+console.log(d.indexOf());
 
 console.log(d.replace("Meyheg", "Sanam"));
 
 let newd = d.replace("Meyheg", "Sanam");
 console.log(newd);
 
-let name1 = "Namira";
-let name2 = "Meyheg";
-console.log(name1 + " " + name2 + " Sanam");
-console.log(name1.concat(" ", name2, " ", "Sanam"));
-console.log(d.indexOf());
+let name4 = "Namira";
+let name5 = "Meyheg";
+console.log(name4 + " " + name5 + " Sanam");
+console.log(name4.concat(" ", name5, " ", "Sanam"));

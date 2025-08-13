@@ -21,17 +21,22 @@ let b = [10, 20, 30, 40, 50];
 b[1] = 1;
 console.log(b);
 
-let c = ["Meyheg", 3, true];
 // check the data type
+let c = ["Meyheg", 3, true];
 console.log(typeof c);
 console.log(typeof c[0]);
 console.log(typeof c[1]);
 console.log(typeof c[2]);
 
-console.log(c.toString());
+console.log(c.toString());    
+// Output: Meyheg,3,true
 
 console.log(c.join(" and "));
+// Output: Meyheg and 3 and true
+
 console.log(c.join(" - "));
+// Output: Meyheg - 3 - true
+
 
 // pop and push
 c.pop();
