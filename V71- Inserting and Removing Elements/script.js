@@ -57,6 +57,10 @@ btn.addEventListener("click", function () {
 
 // afterend → after the element itself
 
+// addEventListener → runs code when a button is clicked.
+
+// Every click creates a new div and adds it to the page.
+
 // Add → appendChild → put it on the page.
 
 // Remove → removeChild → take it off the page.
