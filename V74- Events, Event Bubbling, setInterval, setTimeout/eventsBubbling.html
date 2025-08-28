@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Bubbling</title>
+    <style>
+      .container {
+        background-color: lightgray;
+        padding: 20px;
+        border: 2px solid black;
+      }
+      .childContainer {
+        background-color: lightblue;
+        padding: 20px;
+        border: 2px solid black;
+        margin-top: 10px;
+      }
+      .child {
+        background-color: lightgreen;
+        padding: 20px;
+        border: 2px solid black;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="childContainer">
+        <div class="child">I'm a child</div>
+      </section>
+    </div>
+    <script>
+      let container = document.querySelector(".container");
+      let childContainer = document.querySelector(".childContainer");
+      let child = document.querySelector(".child");
+
+      container.addEventListener("click", () => {
+        alert("You clicked on the container");
+      });
+
+      childContainer.addEventListener("click", () => {
+        alert("You clicked on the child container");
+      });
+
+      child.addEventListener("click", (e) => {
+        // e.stopPropagation();
+        alert("You clicked on the child");
+      });
+    </script>
+  </body>
+</html>
+
+<!-- Event Bubbling Behavior
+
+When you click on the child div, JavaScript follows bubbling order:
+
+✅ First → child div click event triggers 
+
+✅ Then → childContainer click event triggers 
+
+✅ Finally → container click event triggers 
+
+This is called event bubbling — events travel from the innermost element up to its parents.
+
+To stop this bubbling behavior, you can use e.stopPropagation() in the child click event listener. Uncomment that line in the code to see how it prevents the parent elements' click events from firing when you click on the child div. -->
