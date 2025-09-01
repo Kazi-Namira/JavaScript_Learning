@@ -47,6 +47,46 @@
         // e.stopPropagation();
         alert("You clicked on the child");
       });
+
+      let boxes = document.getElementsByClassName("box");
+
+      // Assign random colors to each box
+      for (let i = 0; i < boxes.length; i++) {
+        // Generate random color for text
+        let textColor =
+          "#" +
+          Math.floor(Math.random() * 16777215)
+            .toString(16)
+            .padStart(6, "0");
+
+        // Generate random background color
+        let bgColor =
+          "#" +
+          Math.floor(Math.random() * 16777215)
+            .toString(16)
+            .padStart(6, "0");
+
+        // Apply the colors to the box
+        boxes[i].style.color = textColor;
+        boxes[i].style.backgroundColor = bgColor;
+      }
+
+      // Change childContainer background color every second
+      setInterval(() => {
+        // Pick a random box
+        let randomBox = boxes[Math.floor(Math.random() * boxes.length)];
+
+        // Change the childContainer background color
+        document.querySelector(".childContainer").style.backgroundColor =
+          randomBox.style.backgroundColor;
+
+        // OPTIONAL → If you also want the text color to change randomly:
+        document.querySelector(".childContainer").style.color =
+          "#" +
+          Math.floor(Math.random() * 16777215)
+            .toString(16)
+            .padStart(6, "0");
+      }, 1000);
     </script>
   </body>
 </html>
